@@ -1,0 +1,24 @@
+spring:
+    profiles.include: emails
+    mail.properties.recipients: aevans91@liberty.edu,cmplank@liberty.edu,pwzoller@liberty.edu,abrinkley5@liberty.edu,chaskins1@liberty.edu
+    datasource:
+        banner:
+            password: '{cipher}c22f010ffbbe3b7e89f94969697e07929ad75ad75f021b2f8867ac264564330015ec1797db65380e360a0fe49654bb7d'
+
+soc.ui.student.url: https://www.liberty.edu/checklist
+
+lu:
+    basicAuth:
+        users:
+            -
+                username: MYLU_SVC_ACCT
+                password: '{cipher}c40aede1b3ffba6de0fe5e19c37d2f2b12b1d4db37bb0388b845681f0bb9f2edb6292acd00bd36b96fd30c795fcdaa09'
+                roles:
+                    - ROLE_SOC_SERVICE_ACCT
+
+flamespass:
+    url: https://www.liberty.edu/flamespass-request/
+    password: '{cipher}f58fd8ac8399773d8d33ca8bbddcde5efee5f131f846a0327ef8823b94c848c1e095c908deb26e36882da2c6e7bb89cd'
+    timeout:
+        read: 10000
+        connect: 5000
